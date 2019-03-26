@@ -10,8 +10,10 @@ The user in this application enters a burger into submission field. At this poin
 
 ## Demo
 
-A live version of the app can be found (here)[].
+A live version of the app can be found (here)[https://andy-burger-hw.herokuapp.com/].
 
 ## Local Install
+
+
 
 

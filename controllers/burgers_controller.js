@@ -6,32 +6,32 @@ var router = express.Router();
 var burger = require('../models/burger.js');
 
 // Create the routes and associated logic
-router.get('/', function(req, res) {
-  burger.selectAll(function(data) {
+router.get('/', function (req, res) {
+  burger.selectAll(function (data) {
     var hbsObject = {
       burgers: data
     };
-    // console.log(hbsObject);
+
     res.render('index', hbsObject);
   });
 });
 
-router.post('/burgers', function(req, res) {
+router.post('/burgers', function (req, res) {
   burger.insertOne([
     'burger_name'
   ], [
     req.body.burger_name
-  ], function(data) {
+  ], function (data) {
     res.redirect('/');
   });
 });
 
-router.put('/burgers/:id', function(req, res) {
+router.put('/burgers/:id', function (req, res) {
   var condition = 'id = ' + req.params.id;
 
   burger.updateOne({
     devoured: true
-  }, condition, function(data) {
+  }, condition, function (data) {
     res.redirect('/');
   });
 });
