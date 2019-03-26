@@ -10,9 +10,15 @@ The user in this application enters a burger into submission field. At this poin
 
 ## Demo
 
-A live version of the app can be found (here)[https://andy-burger-hw.herokuapp.com/].
+A live version of the app can be found [here](https://andy-burger-hw.herokuapp.com/).
 
 ## Local Install
+
+* Clone the git repository 
+* Run npm install mysql express handlebars in the command line
+* Run schema and seeds for the MySQL in MySQL interface of your choosing
+* Add your password to connection.js
+* Run node server on the command line and you will be up and running
 
 
 
